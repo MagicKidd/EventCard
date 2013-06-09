@@ -1,0 +1,156 @@
+<style type="text/css">
+body {
+	margin:0px auto;
+	color:#000000;
+	font:18px/24px "微软雅黑","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	overflow:auto;
+}
+* {
+	margin:0px;
+	padding:0px;
+}
+.event_card {
+	margin:0px auto;
+	margin-top:60px;
+	position:relative;
+	width:330px;
+}
+.expan_div {
+	width: 120px;
+	height: 377px;
+	margin-top: -29px;
+	margin-left: 20px;
+	z-index:20;
+	position:absolute;
+	display:none;
+}
+div .expan_div
+{
+	display: none;
+}
+.top_card {
+	width:100%;
+	height:44px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+}
+.top_card_1 {
+	width:400px;
+	margin-left:140px;
+	height:32px;
+	font-size:25px;
+	line-height:32px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow:hidden;
+}
+.top_card_2 {
+	width:400px;
+	margin-left:140px;
+	height:32px;
+	font-size:10px;
+	line-height:32px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow:hidden;
+}
+.bottom_card {
+	width:100%;
+	height:187px;
+	overflow:hidden;
+	position:relative;
+	-webkit-animation-duration: 200ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes slideDownAnimation{
+	0%{height:0px;}
+	25%{height:47px;}
+	50%{height:94px;}
+	75%{height:121px;}
+	100%{height:187px;}
+}
+@-webkit-keyframes slideUpAnimation{
+	0%{height:187px;}
+	25%{height:121px;}
+	50%{height:94px;}
+	75%{height:;47px}
+	100%{height:0px;}
+}
+
+/*-----------拓展功能动画-----*/
+#f1_container {
+  position: relative;
+  width: 110px;
+  height: 125px;
+  float:left;
+  z-index: 1;
+}
+#f1_container {
+  -webkit-perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 1px 2px 5px #aaa;
+  -webkit-transform-style: preserve-3d;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+
+}
+#f1_card {
+  -webkit-transform-origin: center center;
+}
+.front,.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+}
+.back {
+  display: block;
+  -webkit-transform: rotateY(-180deg);
+  box-sizing: border-box;
+  background-color: #aaa;
+}
+
+@-webkit-keyframes flipAnimation{
+	0%{-webkit-transform: rotateY(0deg);margin-left:0px;}
+	50%{-webkit-transform: rotateY(-90deg);margin-left:50px;}
+	100%{-webkit-transform: rotateY(-180deg);margin-left:0px;}
+}
+/*-----------zard create shadow------------*/
+
+.showShadow{
+	-webkit-animation-name:addAnimate;
+	-webkit-animation-duration:120ms;
+	-webkit-animation-timing-function:ease;
+	-webkit-box-shadow: 0 1px 3px #aaa, 1px 1px 3px #aaa, -1px 1px 3px #aaa;
+	margin-top:52px;
+}
+
+@-webkit-keyframes addAnimate{
+	0%{margin-top: 60px;}
+	50%{margin-top: 56x;}
+	100%{margin-top: 52px;}
+}
+
+.removeShadow{
+	-webkit-animation-name:removeAnimate;
+	-webkit-animation-duration:90ms;
+	-webkit-animation-timing-function:ease;
+	-webkit-box-shadow: 0px 0px 0px white;
+	margin-top:60px;
+}
+
+@-webkit-keyframes removeAnimate{
+	0%{margin-top: 52px;}
+	50%{margin-top: 56px;}
+	100%{margin-top: 60px;}
+}
+</style>

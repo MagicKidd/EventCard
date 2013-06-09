@@ -1,0 +1,235 @@
+body{
+	margin:0;
+	padding:0;  
+}
+.tv1920_1080{
+	float:left;
+	margin:20px 127.5px 0px 127.5px;
+	padding:0;
+	height:1060px;
+}
+.tv1280_720{
+	float:left;
+	margin:20px 112px 0px 112px;
+	padding:0;
+	height:700px;
+}
+.title1920_1080{
+	width:1580.5px;
+	height:36px;
+	line-height:36px;
+	font:28px "微软雅黑","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	float:left;
+	margin-left:84.5px;
+}
+
+.title1280_720{
+	width:1056px;
+	height:30px;
+	line-height:30px;
+	font:24px "微软雅黑","Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	float:left;
+	margin-left:54.5px;
+}
+.clear #top,
+.clear #left,
+.clear #right,
+.clear #bottom
+{
+	background-image:none !important;
+}
+
+/*------------------1280*720-----------------*/
+.tv1280_720 .event_card {
+	margin:0px 40.5px 0px 40.5px;
+	float:left;
+	width:271px;
+	height:221px;
+}
+.tv1280_720 .top_card {
+	width:100%;
+	height:46px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+}
+.tv1280_720 .bottom_card {
+	width:100%;
+	height:142px;
+	overflow:hidden;
+	position:relative;
+	-webkit-animation-duration: 200ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+.tv1280_720 #top{
+	width:271px;
+	height:9px;
+	float:left;
+	background-image:url(../Images/1280_720top.png);
+}
+.tv1280_720 #left{
+	width:14px;
+	height:188px;
+	float:left;
+	background-image:url(../Images/1280_720left.png);
+}
+.tv1280_720 #right{
+	width:17px;	
+	height:188px;
+	float:left;
+	background-image:url(../Images/1280_720right.png);
+}
+.tv1280_720 #bottom{
+	width:271px;
+	height:24px;
+	float:left;
+	background-image:url(../Images/1280_720bottom.png);
+}
+.tv1280_720 #header{
+	float:left;
+	width:240px;
+	height:188px;
+}
+.tv1280_720 .center_card {
+	margin:229.5px 392.5px 0px 392.5px !important;
+}
+.tv1280_720 #header .top_card .subTitle1{
+	font-size:18px;
+}
+.tv1280_720 #header .top_card .subTitle2{
+	font-size:14px;
+}
+/*------------------1920*1080-----------------*/
+.tv1920_1080 .event_card {
+	margin:2px 62.5px 0px 62.5px;
+	float:left;
+	width:430px;
+	height:340px;
+	-webkit-transform: translateZ(0px);
+	
+	-webkit-transform-style: preserve-3d;
+  
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-timing-function: ease;
+}
+.expan_div {
+	width: 120px;
+	height: 377px;
+	margin-top: -29px;
+	margin-left: 40px;
+	z-index:20;
+	position:absolute;
+	display:none;
+}
+.expan_div
+{
+	display: none;
+}
+.tv1920_1080 .top_card {
+	width:380px;
+	height:74px;
+	overflow:hidden;
+	float:left;
+}
+.tv1920_1080 .bottom_card {
+	width:380px;
+	height:226px;
+	overflow:hidden;
+	position:relative;
+	-webkit-animation-duration: 200ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    float:left;
+}
+.tv1920_1080 #top{
+	width:430px;
+	height:10px;
+	float:left;
+	background-image:url(../Images/1920_1080top.png);
+}
+.tv1920_1080 #left{
+	width:22px;
+	height:300px;
+	float:left;
+	background-image:url(../Images/1920_1080left.png);
+}
+.tv1920_1080 #right{
+	width:28px;
+	height:300px;
+	float:left;
+	background-image:url(../Images/1920_1080right.png);
+}
+.tv1920_1080 #bottom{
+	width:430px;
+	height:30px;
+	float:left;
+	background-image:url(../Images/1920_1080bottom.png);
+}
+.tv1920_1080 #header{
+	float:left;
+	width:380px;
+	height:300px;
+}
+.tv1920_1080 .center_card {
+	margin:360px 617.5px 0px 617.5px !important;
+}
+.tv1920_1080 #header .top_card .subTitle1{
+	font-size:28px;
+}
+.tv1920_1080 #header .top_card .subTitle2{
+	font-size:18px;
+}
+/*-------------------animation----------------*/
+@-webkit-keyframes zAnimation {
+  from {
+    -webkit-transform: translateZ(-1000px);
+  }
+  to {
+    -webkit-transform: translateZ(0px);
+  }
+}
+/*-----------拓展功能动画-----*/
+#f1_container {
+  position: relative;
+  width: 110px;
+  height: 125px;
+  float:left;
+  z-index: 1;
+}
+#f1_container {
+  -webkit-perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 1px 2px 5px #aaa;
+  -webkit-transform-style: preserve-3d;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+}
+#f1_card {
+  -webkit-transform-origin: center center;
+}
+.front,.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+}
+.back {
+  display: block;
+  -webkit-transform: rotateY(-180deg);
+  box-sizing: border-box;
+  background-color: #aaa;
+}
+
+@-webkit-keyframes flipAnimation{
+	0%{-webkit-transform: rotateY(0deg);margin-left:0px;}
+	50%{-webkit-transform: rotateY(-90deg);margin-left:50px;}
+	100%{-webkit-transform: rotateY(-180deg);margin-left:0px;}
+}
+
+
+chrome://thumb/http://www.cnblogs.com/nuysoft/archive/2012/03/19/2404274.html
