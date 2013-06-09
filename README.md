@@ -1,24 +1,23 @@
-
 服务端框架结构
 
 
 EventCard（项目名称）
 　　|——src
-        |——com.dehoo.beans		数据库反转后自动生成的java文件及xml文件
-　　    |——com.dehoo.dao		  数据库的基本操作
+        |——com.dehoo.beans	数据库反转后自动生成的java文件及xml文件
+　　    |——com.dehoo.dao	数据库的基本操作
 　　    |——com.dehoo.servlet	处理前端页面的请求并响应
-　　    |——com.dehoo.utils		工具类
+　　    |——com.dehoo.utils	工具类
 　　    |——hibernate.cfg.xml	hibernate框架的配置文件
 　　|——WebRoot
-　　    |——EventCardDemo	  	服务器端的页面（在线模式的模板页面）
+　　    |——EventCardDemo	服务器端的页面（在线模式的模板页面）
 　　    |——Css			
 　      |——Images
 　　    |——Js
 　　    |——Lib	            	前端框架
-　　    |——Model	          	前端的model层
-　   　 |——Template		        页面模板
-　　    |——TV				          第一屏页面
-　　    |——View			          前端的view层
+　　    |——Model	        前端的model层
+　   　 |——Template		页面模板
+　　    |——TV		        第一屏页面
+　　    |——View			前端的view层
 　　
 
 
