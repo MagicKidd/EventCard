@@ -10,14 +10,14 @@ EventCard（项目名称）
 　　    |——hibernate.cfg.xml	hibernate框架的配置文件
 　　|——WebRoot
 　　    |——EventCardDemo	服务器端的页面（在线模式的模板页面）
-　　    |——Css			
-　      |——Images
-　　    |——Js
-　　    |——Lib	            	前端框架
-　　    |——Model	        前端的model层
-　   　 |——Template		页面模板
-　　    |——TV		        第一屏页面
-　　    |——View			前端的view层
+　　            |——Css			
+　              |——Images
+　　            |——Js
+　　            |——Lib	        前端框架
+　　            |——Model	前端的model层
+　   　         |——Template	页面模板
+　　            |——TV		第一屏页面
+        　　    |——View		前端的view层
 　　
 
 
